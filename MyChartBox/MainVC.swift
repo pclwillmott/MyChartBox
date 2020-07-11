@@ -28,7 +28,7 @@ class MainVC: NSViewController {
     
 //    if let url = URL(string: "xhttps://www.officialcharts.com/charts/singles-chart/20110703/7501/") {
 
-    let path = "/Users/paul/Documents/MyChartBox/Test.html"
+    let path = "/Users/paul/Documents/MyChartBox/Test.html" 
     
     do {
       
