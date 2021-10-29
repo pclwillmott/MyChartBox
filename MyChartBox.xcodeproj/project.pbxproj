@@ -7,13 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA05AA9525C6EF890086E6B0 /* ChartAlbumsPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA05AA9425C6EF890086E6B0 /* ChartAlbumsPlayer.storyboard */; };
+		DA05AA9A25C6F34E0086E6B0 /* ChartAlbumsPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA05AA9925C6F34E0086E6B0 /* ChartAlbumsPlayerVC.swift */; };
+		DA07DAF424DD789200047C65 /* DJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07DAF324DD789200047C65 /* DJ.swift */; };
 		DA0EAEDA24B2A4B400584B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0EAED924B2A4B400584B52 /* AppDelegate.swift */; };
 		DA0EAEDC24B2A4B400584B52 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0EAEDB24B2A4B400584B52 /* MainVC.swift */; };
 		DA0EAEDE24B2A4B500584B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0EAEDD24B2A4B500584B52 /* Assets.xcassets */; };
 		DA0EAEE124B2A4B500584B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0EAEDF24B2A4B500584B52 /* Main.storyboard */; };
 		DA0EAEED24B2A4B500584B52 /* MyChartBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0EAEEC24B2A4B500584B52 /* MyChartBoxTests.swift */; };
 		DA0EAEF824B2A4B500584B52 /* MyChartBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0EAEF724B2A4B500584B52 /* MyChartBoxUITests.swift */; };
+		DA15344625A3755E0036ED2C /* PlayerControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA15344525A3755E0036ED2C /* PlayerControl.xib */; };
+		DA15344B25A376E50036ED2C /* PlayerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15344A25A376E50036ED2C /* PlayerControl.swift */; };
+		DA183E2524D9827100E487E8 /* SelectOverride.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA183E2424D9827100E487E8 /* SelectOverride.storyboard */; };
+		DA183E2724D9839700E487E8 /* SelectOverrideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA183E2624D9839700E487E8 /* SelectOverrideVC.swift */; };
+		DA183E2924D98EF000E487E8 /* ArtistTableViewDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA183E2824D98EF000E487E8 /* ArtistTableViewDS.swift */; };
+		DA183E2B24D99F6500E487E8 /* TrackTableViewDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA183E2A24D99F6500E487E8 /* TrackTableViewDS.swift */; };
+		DA1974EB25AB62E100405A06 /* ChartSinglesPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1974EA25AB62E100405A06 /* ChartSinglesPlayer.storyboard */; };
+		DA1974F025AB652F00405A06 /* ChartSinglesPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1974EF25AB652F00405A06 /* ChartSinglesPlayerVC.swift */; };
+		DA2159D624D6F3D000C4DB10 /* MainTableViewDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2159D524D6F3D000C4DB10 /* MainTableViewDS.swift */; };
+		DA2159D824D705A200C4DB10 /* TableCellViewChartListing.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA2159D724D705A200C4DB10 /* TableCellViewChartListing.xib */; };
+		DA2159DA24D7060F00C4DB10 /* TableCellViewChartListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2159D924D7060F00C4DB10 /* TableCellViewChartListing.swift */; };
+		DA2159E024D83D4A00C4DB10 /* ModalWindows.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2159DF24D83D4A00C4DB10 /* ModalWindows.swift */; };
+		DA3BE2A9259A1B210093D4B6 /* AlbumPlayerTableViewDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3BE2A8259A1B210093D4B6 /* AlbumPlayerTableViewDS.swift */; };
+		DA4E732B24E44B6800FDF328 /* CollectionTableViewDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E732A24E44B6800FDF328 /* CollectionTableViewDS.swift */; };
+		DA5C812224E21F5200A1AC57 /* ArtistCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5C812124E21F5200A1AC57 /* ArtistCollection.swift */; };
+		DA5C812424E22B1000A1AC57 /* ArtistView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA5C812324E22B1000A1AC57 /* ArtistView.storyboard */; };
+		DA6379EC24E36C70008C3B23 /* ChartArtistTableViewDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6379EB24E36C70008C3B23 /* ChartArtistTableViewDS.swift */; };
+		DA691A392598E47300C3A4A7 /* AlbumPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA691A382598E47300C3A4A7 /* AlbumPlayerVC.swift */; };
+		DA6D428824E2CCAF0089F63F /* ArtistViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6D428724E2CCAF0089F63F /* ArtistViewVC.swift */; };
+		DA6D428A24E2D1690089F63F /* ComboBoxDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6D428924E2D1690089F63F /* ComboBoxDS.swift */; };
+		DA709B3025A2175800952A28 /* Associate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA709B2F25A2175800952A28 /* Associate.storyboard */; };
+		DA709B3525A2247100952A28 /* AssociateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA709B3425A2247100952A28 /* AssociateVC.swift */; };
+		DA7BE41324F337BC0082EF19 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BE41224F337BC0082EF19 /* Music.swift */; };
+		DA7FEA6E25AB37980068EF68 /* ArtistSinglesPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7FEA6D25AB37980068EF68 /* ArtistSinglesPlayer.storyboard */; };
+		DA7FEA7325AB3B540068EF68 /* ArtistSinglesPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7FEA7225AB3B540068EF68 /* ArtistSinglesPlayerVC.swift */; };
+		DA80A43E25AB68C4002D895D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA80A43D25AB68C4002D895D /* StringExtensions.swift */; };
+		DA84A7F324CCFC8500403BA0 /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84A7F224CCFC8500403BA0 /* Programme.swift */; };
+		DA8A44282586582900471B4D /* Update.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8A44272586582900471B4D /* Update.storyboard */; };
+		DA8A442D25865D7800471B4D /* UpdateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A442C25865D7800471B4D /* UpdateVC.swift */; };
+		DA8A44352586890100471B4D /* UpdaterTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A44342586890100471B4D /* UpdaterTools.swift */; };
+		DA8B5B6825A8CA12004CA7C4 /* PlayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B5B6725A8CA12004CA7C4 /* PlayList.swift */; };
+		DA8F82EA24D30D3C006F2163 /* SingleSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F82E924D30D3C006F2163 /* SingleSide.swift */; };
+		DA98766B25A0C58A004D5A53 /* MusicAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA98766A25A0C58A004D5A53 /* MusicAlbum.swift */; };
+		DA98767025A0C7DC004D5A53 /* AlbumPlayCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA98766F25A0C7DC004D5A53 /* AlbumPlayCount.swift */; };
+		DA98767B25A0D4E5004D5A53 /* MusicArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA98767A25A0D4E5004D5A53 /* MusicArtist.swift */; };
+		DA9D118024BA1041000742C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D117F24BA1041000742C4 /* Constants.swift */; };
+		DA9D118224BA226D000742C4 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D118124BA226D000742C4 /* Database.swift */; };
+		DA9D118424BA2FA2000742C4 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D118324BA2FA2000742C4 /* Artist.swift */; };
+		DA9D118624BB392F000742C4 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D118524BB392F000742C4 /* Label.swift */; };
+		DA9D118824BB3E37000742C4 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D118724BB3E37000742C4 /* Chart.swift */; };
+		DA9D118A24BB4386000742C4 /* ChartListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D118924BB4386000742C4 /* ChartListing.swift */; };
+		DA9D118C24BB5B1E000742C4 /* ChartEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D118B24BB5B1E000742C4 /* ChartEntry.swift */; };
+		DA9D119024BB83F5000742C4 /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D118F24BB83F5000742C4 /* Dates.swift */; };
+		DAB2F61C25A4B37900085EE1 /* ArtistAlbumsPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB2F61B25A4B37900085EE1 /* ArtistAlbumsPlayer.storyboard */; };
+		DAB2F62125A4B54900085EE1 /* ArtistAlbumsPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2F62025A4B54900085EE1 /* ArtistAlbumsPlayerVC.swift */; };
+		DAB629B025B328790000147D /* PlayerControlPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB629AF25B328790000147D /* PlayerControlPlus.swift */; };
+		DAD2744924F156A500BB78D1 /* PlayCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2744824F156A500BB78D1 /* PlayCount.swift */; };
+		DAD2744B24F16A4300BB78D1 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD2744A24F16A4300BB78D1 /* Preferences.storyboard */; };
+		DAD2744D24F16C6400BB78D1 /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2744C24F16C6400BB78D1 /* PreferencesVC.swift */; };
+		DAE561312593AECC009114E2 /* AlbumPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE561302593AECC009114E2 /* AlbumPlayer.storyboard */; };
 		DAE85E7A24B2A984006BF0D3 /* Sqlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE85E7924B2A984006BF0D3 /* Sqlite.swift */; };
+		DAFA7EEA24C4748A003D1BC2 /* iTunesLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFA7EE924C4748A003D1BC2 /* iTunesLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +88,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA05AA9425C6EF890086E6B0 /* ChartAlbumsPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChartAlbumsPlayer.storyboard; sourceTree = "<group>"; };
+		DA05AA9925C6F34E0086E6B0 /* ChartAlbumsPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartAlbumsPlayerVC.swift; sourceTree = "<group>"; };
+		DA07DAF324DD789200047C65 /* DJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJ.swift; sourceTree = "<group>"; };
 		DA0EAED624B2A4B400584B52 /* MyChartBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChartBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0EAED924B2A4B400584B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA0EAEDB24B2A4B400584B52 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -47,7 +104,59 @@
 		DA0EAEF324B2A4B500584B52 /* MyChartBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyChartBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0EAEF724B2A4B500584B52 /* MyChartBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChartBoxUITests.swift; sourceTree = "<group>"; };
 		DA0EAEF924B2A4B500584B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA15344525A3755E0036ED2C /* PlayerControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerControl.xib; sourceTree = "<group>"; };
+		DA15344A25A376E50036ED2C /* PlayerControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControl.swift; sourceTree = "<group>"; };
+		DA183E2424D9827100E487E8 /* SelectOverride.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectOverride.storyboard; sourceTree = "<group>"; };
+		DA183E2624D9839700E487E8 /* SelectOverrideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOverrideVC.swift; sourceTree = "<group>"; };
+		DA183E2824D98EF000E487E8 /* ArtistTableViewDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableViewDS.swift; sourceTree = "<group>"; };
+		DA183E2A24D99F6500E487E8 /* TrackTableViewDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewDS.swift; sourceTree = "<group>"; };
+		DA1974EA25AB62E100405A06 /* ChartSinglesPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChartSinglesPlayer.storyboard; sourceTree = "<group>"; };
+		DA1974EF25AB652F00405A06 /* ChartSinglesPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartSinglesPlayerVC.swift; sourceTree = "<group>"; };
+		DA2159D524D6F3D000C4DB10 /* MainTableViewDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDS.swift; sourceTree = "<group>"; };
+		DA2159D724D705A200C4DB10 /* TableCellViewChartListing.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCellViewChartListing.xib; sourceTree = "<group>"; };
+		DA2159D924D7060F00C4DB10 /* TableCellViewChartListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellViewChartListing.swift; sourceTree = "<group>"; };
+		DA2159DF24D83D4A00C4DB10 /* ModalWindows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalWindows.swift; sourceTree = "<group>"; };
+		DA3BE2A8259A1B210093D4B6 /* AlbumPlayerTableViewDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPlayerTableViewDS.swift; sourceTree = "<group>"; };
+		DA4E732A24E44B6800FDF328 /* CollectionTableViewDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewDS.swift; sourceTree = "<group>"; };
+		DA5C812124E21F5200A1AC57 /* ArtistCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCollection.swift; sourceTree = "<group>"; };
+		DA5C812324E22B1000A1AC57 /* ArtistView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArtistView.storyboard; sourceTree = "<group>"; };
+		DA6379EB24E36C70008C3B23 /* ChartArtistTableViewDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartArtistTableViewDS.swift; sourceTree = "<group>"; };
+		DA691A382598E47300C3A4A7 /* AlbumPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPlayerVC.swift; sourceTree = "<group>"; };
+		DA6D428724E2CCAF0089F63F /* ArtistViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewVC.swift; sourceTree = "<group>"; };
+		DA6D428924E2D1690089F63F /* ComboBoxDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComboBoxDS.swift; sourceTree = "<group>"; };
+		DA709B2F25A2175800952A28 /* Associate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Associate.storyboard; sourceTree = "<group>"; };
+		DA709B3425A2247100952A28 /* AssociateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociateVC.swift; sourceTree = "<group>"; };
+		DA7BE41224F337BC0082EF19 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		DA7FEA6D25AB37980068EF68 /* ArtistSinglesPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArtistSinglesPlayer.storyboard; sourceTree = "<group>"; };
+		DA7FEA7225AB3B540068EF68 /* ArtistSinglesPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSinglesPlayerVC.swift; sourceTree = "<group>"; };
+		DA80A43D25AB68C4002D895D /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		DA84A7F224CCFC8500403BA0 /* Programme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programme.swift; sourceTree = "<group>"; };
+		DA8A44272586582900471B4D /* Update.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Update.storyboard; sourceTree = "<group>"; };
+		DA8A442C25865D7800471B4D /* UpdateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateVC.swift; sourceTree = "<group>"; };
+		DA8A44342586890100471B4D /* UpdaterTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdaterTools.swift; sourceTree = "<group>"; };
+		DA8B5B6725A8CA12004CA7C4 /* PlayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayList.swift; sourceTree = "<group>"; };
+		DA8F82E924D30D3C006F2163 /* SingleSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSide.swift; sourceTree = "<group>"; };
+		DA98766A25A0C58A004D5A53 /* MusicAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAlbum.swift; sourceTree = "<group>"; };
+		DA98766F25A0C7DC004D5A53 /* AlbumPlayCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPlayCount.swift; sourceTree = "<group>"; };
+		DA98767A25A0D4E5004D5A53 /* MusicArtist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicArtist.swift; sourceTree = "<group>"; };
+		DA9D117F24BA1041000742C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DA9D118124BA226D000742C4 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		DA9D118324BA2FA2000742C4 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		DA9D118524BB392F000742C4 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		DA9D118724BB3E37000742C4 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		DA9D118924BB4386000742C4 /* ChartListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartListing.swift; sourceTree = "<group>"; };
+		DA9D118B24BB5B1E000742C4 /* ChartEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartEntry.swift; sourceTree = "<group>"; };
+		DA9D118F24BB83F5000742C4 /* Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
+		DAB2F61B25A4B37900085EE1 /* ArtistAlbumsPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArtistAlbumsPlayer.storyboard; sourceTree = "<group>"; };
+		DAB2F62025A4B54900085EE1 /* ArtistAlbumsPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistAlbumsPlayerVC.swift; sourceTree = "<group>"; };
+		DAB629AF25B328790000147D /* PlayerControlPlus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlPlus.swift; sourceTree = "<group>"; };
+		DAD2744824F156A500BB78D1 /* PlayCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCount.swift; sourceTree = "<group>"; };
+		DAD2744A24F16A4300BB78D1 /* Preferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
+		DAD2744C24F16C6400BB78D1 /* PreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
+		DAE561302593AECC009114E2 /* AlbumPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumPlayer.storyboard; sourceTree = "<group>"; };
 		DAE85E7924B2A984006BF0D3 /* Sqlite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sqlite.swift; sourceTree = "<group>"; };
+		DAFA7EE924C4748A003D1BC2 /* iTunesLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iTunesLibrary.framework; path = System/Library/Frameworks/iTunesLibrary.framework; sourceTree = SDKROOT; };
+		DAFA7EEB24C47CBA003D1BC2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFA7EEA24C4748A003D1BC2 /* iTunesLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +192,7 @@
 				DA0EAEEB24B2A4B500584B52 /* MyChartBoxTests */,
 				DA0EAEF624B2A4B500584B52 /* MyChartBoxUITests */,
 				DA0EAED724B2A4B400584B52 /* Products */,
+				DAFA7EE824C4748A003D1BC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +210,65 @@
 			isa = PBXGroup;
 			children = (
 				DA0EAED924B2A4B400584B52 /* AppDelegate.swift */,
-				DA0EAEDB24B2A4B400584B52 /* MainVC.swift */,
+				DA9D118324BA2FA2000742C4 /* Artist.swift */,
+				DA183E2824D98EF000E487E8 /* ArtistTableViewDS.swift */,
+				DA6379EB24E36C70008C3B23 /* ChartArtistTableViewDS.swift */,
 				DA0EAEDD24B2A4B500584B52 /* Assets.xcassets */,
-				DA0EAEDF24B2A4B500584B52 /* Main.storyboard */,
+				DA9D118724BB3E37000742C4 /* Chart.swift */,
+				DA9D118B24BB5B1E000742C4 /* ChartEntry.swift */,
+				DA9D118924BB4386000742C4 /* ChartListing.swift */,
+				DA9D117F24BA1041000742C4 /* Constants.swift */,
+				DA9D118124BA226D000742C4 /* Database.swift */,
+				DA9D118F24BB83F5000742C4 /* Dates.swift */,
 				DA0EAEE224B2A4B500584B52 /* Info.plist */,
+				DA9D118524BB392F000742C4 /* Label.swift */,
+				DA0EAEDF24B2A4B500584B52 /* Main.storyboard */,
+				DA0EAEDB24B2A4B400584B52 /* MainVC.swift */,
+				DA709B2F25A2175800952A28 /* Associate.storyboard */,
+				DA709B3425A2247100952A28 /* AssociateVC.swift */,
+				DA15344525A3755E0036ED2C /* PlayerControl.xib */,
+				DA15344A25A376E50036ED2C /* PlayerControl.swift */,
+				DAB629AF25B328790000147D /* PlayerControlPlus.swift */,
+				DA8B5B6725A8CA12004CA7C4 /* PlayList.swift */,
+				DA2159D524D6F3D000C4DB10 /* MainTableViewDS.swift */,
+				DA2159DF24D83D4A00C4DB10 /* ModalWindows.swift */,
 				DA0EAEE324B2A4B500584B52 /* MyChartBox.entitlements */,
+				DA84A7F224CCFC8500403BA0 /* Programme.swift */,
+				DA183E2424D9827100E487E8 /* SelectOverride.storyboard */,
+				DA183E2624D9839700E487E8 /* SelectOverrideVC.swift */,
+				DA8F82E924D30D3C006F2163 /* SingleSide.swift */,
 				DAE85E7924B2A984006BF0D3 /* Sqlite.swift */,
+				DA2159D924D7060F00C4DB10 /* TableCellViewChartListing.swift */,
+				DA2159D724D705A200C4DB10 /* TableCellViewChartListing.xib */,
+				DA183E2A24D99F6500E487E8 /* TrackTableViewDS.swift */,
+				DA07DAF324DD789200047C65 /* DJ.swift */,
+				DA5C812124E21F5200A1AC57 /* ArtistCollection.swift */,
+				DA5C812324E22B1000A1AC57 /* ArtistView.storyboard */,
+				DA6D428724E2CCAF0089F63F /* ArtistViewVC.swift */,
+				DA6D428924E2D1690089F63F /* ComboBoxDS.swift */,
+				DA4E732A24E44B6800FDF328 /* CollectionTableViewDS.swift */,
+				DAD2744824F156A500BB78D1 /* PlayCount.swift */,
+				DA98766F25A0C7DC004D5A53 /* AlbumPlayCount.swift */,
+				DAD2744A24F16A4300BB78D1 /* Preferences.storyboard */,
+				DAD2744C24F16C6400BB78D1 /* PreferencesVC.swift */,
+				DA7BE41224F337BC0082EF19 /* Music.swift */,
+				DA98766A25A0C58A004D5A53 /* MusicAlbum.swift */,
+				DA98767A25A0D4E5004D5A53 /* MusicArtist.swift */,
+				DA8A44272586582900471B4D /* Update.storyboard */,
+				DA8A442C25865D7800471B4D /* UpdateVC.swift */,
+				DA8A44342586890100471B4D /* UpdaterTools.swift */,
+				DAE561302593AECC009114E2 /* AlbumPlayer.storyboard */,
+				DA691A382598E47300C3A4A7 /* AlbumPlayerVC.swift */,
+				DA3BE2A8259A1B210093D4B6 /* AlbumPlayerTableViewDS.swift */,
+				DAB2F61B25A4B37900085EE1 /* ArtistAlbumsPlayer.storyboard */,
+				DAB2F62025A4B54900085EE1 /* ArtistAlbumsPlayerVC.swift */,
+				DA7FEA6D25AB37980068EF68 /* ArtistSinglesPlayer.storyboard */,
+				DA7FEA7225AB3B540068EF68 /* ArtistSinglesPlayerVC.swift */,
+				DA1974EA25AB62E100405A06 /* ChartSinglesPlayer.storyboard */,
+				DA1974EF25AB652F00405A06 /* ChartSinglesPlayerVC.swift */,
+				DA80A43D25AB68C4002D895D /* StringExtensions.swift */,
+				DA05AA9425C6EF890086E6B0 /* ChartAlbumsPlayer.storyboard */,
+				DA05AA9925C6F34E0086E6B0 /* ChartAlbumsPlayerVC.swift */,
 			);
 			path = MyChartBox;
 			sourceTree = "<group>";
@@ -125,6 +289,15 @@
 				DA0EAEF924B2A4B500584B52 /* Info.plist */,
 			);
 			path = MyChartBoxUITests;
+			sourceTree = "<group>";
+		};
+		DAFA7EE824C4748A003D1BC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAFA7EEB24C47CBA003D1BC2 /* AVFoundation.framework */,
+				DAFA7EE924C4748A003D1BC2 /* iTunesLibrary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +404,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2159D824D705A200C4DB10 /* TableCellViewChartListing.xib in Resources */,
+				DA1974EB25AB62E100405A06 /* ChartSinglesPlayer.storyboard in Resources */,
 				DA0EAEDE24B2A4B500584B52 /* Assets.xcassets in Resources */,
+				DAB2F61C25A4B37900085EE1 /* ArtistAlbumsPlayer.storyboard in Resources */,
+				DA15344625A3755E0036ED2C /* PlayerControl.xib in Resources */,
+				DAD2744B24F16A4300BB78D1 /* Preferences.storyboard in Resources */,
+				DA05AA9525C6EF890086E6B0 /* ChartAlbumsPlayer.storyboard in Resources */,
+				DAE561312593AECC009114E2 /* AlbumPlayer.storyboard in Resources */,
+				DA709B3025A2175800952A28 /* Associate.storyboard in Resources */,
+				DA8A44282586582900471B4D /* Update.storyboard in Resources */,
 				DA0EAEE124B2A4B500584B52 /* Main.storyboard in Resources */,
+				DA5C812424E22B1000A1AC57 /* ArtistView.storyboard in Resources */,
+				DA7FEA6E25AB37980068EF68 /* ArtistSinglesPlayer.storyboard in Resources */,
+				DA183E2524D9827100E487E8 /* SelectOverride.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,9 +442,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA183E2924D98EF000E487E8 /* ArtistTableViewDS.swift in Sources */,
+				DA84A7F324CCFC8500403BA0 /* Programme.swift in Sources */,
+				DA9D118824BB3E37000742C4 /* Chart.swift in Sources */,
+				DA9D118424BA2FA2000742C4 /* Artist.swift in Sources */,
+				DA9D119024BB83F5000742C4 /* Dates.swift in Sources */,
+				DAB629B025B328790000147D /* PlayerControlPlus.swift in Sources */,
+				DA6D428824E2CCAF0089F63F /* ArtistViewVC.swift in Sources */,
+				DAB2F62125A4B54900085EE1 /* ArtistAlbumsPlayerVC.swift in Sources */,
+				DA07DAF424DD789200047C65 /* DJ.swift in Sources */,
+				DA7FEA7325AB3B540068EF68 /* ArtistSinglesPlayerVC.swift in Sources */,
+				DA98766B25A0C58A004D5A53 /* MusicAlbum.swift in Sources */,
+				DA7BE41324F337BC0082EF19 /* Music.swift in Sources */,
 				DA0EAEDC24B2A4B400584B52 /* MainVC.swift in Sources */,
+				DA183E2B24D99F6500E487E8 /* TrackTableViewDS.swift in Sources */,
+				DA98767B25A0D4E5004D5A53 /* MusicArtist.swift in Sources */,
+				DA9D118C24BB5B1E000742C4 /* ChartEntry.swift in Sources */,
+				DA05AA9A25C6F34E0086E6B0 /* ChartAlbumsPlayerVC.swift in Sources */,
+				DA8A44352586890100471B4D /* UpdaterTools.swift in Sources */,
+				DA6379EC24E36C70008C3B23 /* ChartArtistTableViewDS.swift in Sources */,
+				DA2159E024D83D4A00C4DB10 /* ModalWindows.swift in Sources */,
+				DA8F82EA24D30D3C006F2163 /* SingleSide.swift in Sources */,
+				DA8B5B6825A8CA12004CA7C4 /* PlayList.swift in Sources */,
+				DA3BE2A9259A1B210093D4B6 /* AlbumPlayerTableViewDS.swift in Sources */,
 				DAE85E7A24B2A984006BF0D3 /* Sqlite.swift in Sources */,
+				DAD2744924F156A500BB78D1 /* PlayCount.swift in Sources */,
+				DA6D428A24E2D1690089F63F /* ComboBoxDS.swift in Sources */,
+				DA80A43E25AB68C4002D895D /* StringExtensions.swift in Sources */,
+				DA709B3525A2247100952A28 /* AssociateVC.swift in Sources */,
 				DA0EAEDA24B2A4B400584B52 /* AppDelegate.swift in Sources */,
+				DAD2744D24F16C6400BB78D1 /* PreferencesVC.swift in Sources */,
+				DA5C812224E21F5200A1AC57 /* ArtistCollection.swift in Sources */,
+				DA9D118224BA226D000742C4 /* Database.swift in Sources */,
+				DA8A442D25865D7800471B4D /* UpdateVC.swift in Sources */,
+				DA98767025A0C7DC004D5A53 /* AlbumPlayCount.swift in Sources */,
+				DA1974F025AB652F00405A06 /* ChartSinglesPlayerVC.swift in Sources */,
+				DA9D118624BB392F000742C4 /* Label.swift in Sources */,
+				DA15344B25A376E50036ED2C /* PlayerControl.swift in Sources */,
+				DA9D118024BA1041000742C4 /* Constants.swift in Sources */,
+				DA691A392598E47300C3A4A7 /* AlbumPlayerVC.swift in Sources */,
+				DA9D118A24BB4386000742C4 /* ChartListing.swift in Sources */,
+				DA4E732B24E44B6800FDF328 /* CollectionTableViewDS.swift in Sources */,
+				DA2159DA24D7060F00C4DB10 /* TableCellViewChartListing.swift in Sources */,
+				DA183E2724D9839700E487E8 /* SelectOverrideVC.swift in Sources */,
+				DA2159D624D6F3D000C4DB10 /* MainTableViewDS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,38 +650,52 @@
 		DA0EAEFD24B2A4B500584B52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_ENTITLEMENTS = MyChartBox/MyChartBox.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = DKK8LC6ZQC;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = MyChartBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = Oswalds.MyChartBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		DA0EAEFE24B2A4B500584B52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_ENTITLEMENTS = MyChartBox/MyChartBox.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = DKK8LC6ZQC;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = MyChartBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = Oswalds.MyChartBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

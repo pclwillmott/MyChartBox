@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="0fM-J4-dal">
+            <objects>
+                <windowController storyboardIdentifier="SyncToiTunesWC" id="bLC-Ze-gFH" sceneMemberID="viewController">
+                    <window key="window" title="Sync to iTunes" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="9WT-o7-wT7">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="268" y="330" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1792" height="1097"/>
+                        <connections>
+                            <outlet property="delegate" destination="bLC-Ze-gFH" id="nml-he-NP5"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="Pi6-W6-vef" kind="relationship" relationship="window.shadowedContentViewController" id="Vd2-dO-zDD"/>
+                    </connections>
+                </windowController>
+                <customObject id="qJb-I1-Ifx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="223"/>
+        </scene>
+        <!--Sync Toi TunesVC-->
+        <scene sceneID="Uzz-TB-3TQ">
+            <objects>
+                <viewController id="Pi6-W6-vef" customClass="SyncToiTunesVC" customModule="MyChartBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="xxy-18-6Bu">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="128"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hAD-gq-qmL">
+                                <rect key="frame" x="385" y="13" width="82" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="L5j-hd-CXZ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="CancelClick:" target="Pi6-W6-vef" id="WBJ-Ch-W2O"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LJa-KF-Q6I">
+                                <rect key="frame" x="304" y="13" width="81" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="push" title="Sync" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vp1-wg-ddE">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="SyncClick:" target="Pi6-W6-vef" id="fOv-yM-Ach"/>
+                                </connections>
+                            </button>
+                            <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" doubleValue="50" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="a4o-w5-Php">
+                                <rect key="frame" x="20" y="67" width="440" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="btnSync" destination="LJa-KF-Q6I" id="fpw-5l-h7r"/>
+                        <outlet property="progressIndicator" destination="a4o-w5-Php" id="doh-HT-DLk"/>
+                    </connections>
+                </viewController>
+                <customObject id="6dV-36-WNv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="127"/>
+        </scene>
+    </scenes>
+</document>

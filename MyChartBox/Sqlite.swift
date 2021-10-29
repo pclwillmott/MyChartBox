@@ -95,11 +95,37 @@ class SqliteParameters {
     }
   }
   
+  public func addWithValue(key:String,value:UInt?) {
+    if !key.isEmpty && key.hasPrefix("@") {
+      if let ivalue = value {
+        self.parameters[key] = " \(ivalue) "
+      }
+      else {
+        addWithNull(key: key)
+      }
+    }
+  }
+  
+  public static func conditionString(value:String) -> String {
+    return " '\(String(value.prefix(value.count)).replacingOccurrences(of: "'", with: "''"))' "
+  }
+  
   public func addWithValue(key:String,value:String?) {
     if !key.isEmpty && key.hasPrefix("@") {
       if let svalue : String = value {
-        var str = svalue
-        str = String(str.prefix(str.count)).replacingOccurrences(of: "'", with: "''")
+        self.parameters[key] = SqliteParameters.conditionString(value: svalue)
+      }
+      else {
+        addWithNull(key: key)
+      }
+    }
+  }
+  
+  public func addWithValue(key:String,value:Date?) {
+    if !key.isEmpty && key.hasPrefix("@") {
+      if let dateValue : Date = value {
+        let df = ISO8601DateFormatter()
+        let str = df.string(from: dateValue)
         self.parameters[key] = " '\(str)' "
       }
       else {
@@ -227,6 +253,13 @@ class SqliteDataReader {
     return (Int) (sqlite3_column_int64(statement, (Int32)(index)))
   }
   
+  public func getUInt(index:Int) -> UInt? {
+    if isDBNull(index: index){
+      return nil;
+    }
+    return (UInt) (sqlite3_column_int64(statement, (Int32)(index)))
+  }
+  
   public func getDouble(index:Int) -> Double? {
     if isDBNull(index: index){
       return nil;
@@ -240,6 +273,16 @@ class SqliteDataReader {
     }
     let cString = sqlite3_column_text(statement, (Int32)(index))
     return String(cString: cString!)
+  }
+  
+  public func getDate(index:Int) -> Date? {
+    if isDBNull(index: index){
+      return nil;
+    }
+    let cString = sqlite3_column_text(statement, (Int32)(index))
+    let isoDate = String(cString: cString!)
+    let dateFormatter = ISO8601DateFormatter()
+    return dateFormatter.date(from:isoDate)!
   }
   
   public func getFieldName(index:Int) -> String {

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PlayerControl" customModule="MyChartBox">
+            <connections>
+                <outlet property="barTotal" destination="6vv-Q0-yHi" id="UH1-8G-N9L"/>
+                <outlet property="barTrack" destination="oRC-mH-y7s" id="LTO-P9-iTH"/>
+                <outlet property="btnBackward" destination="yVh-NT-70R" id="aT6-BH-6zw"/>
+                <outlet property="btnForward" destination="f1a-Bb-B2A" id="a7y-E0-WON"/>
+                <outlet property="btnPlay" destination="Rr6-XI-5Yn" id="WMb-Y3-OTs"/>
+                <outlet property="btnStop" destination="K4M-cC-GV3" id="d5u-bM-r8m"/>
+                <outlet property="contentView" destination="c22-O7-iKe" id="qaK-LA-c6m"/>
+                <outlet property="lblTimeDone" destination="4jA-uB-fPW" id="vMp-6m-2Ge"/>
+                <outlet property="lblTimeToDo" destination="D6w-Az-wMJ" id="5Yv-2H-oom"/>
+                <outlet property="lblTotalTimeDone" destination="gb1-7t-qTe" id="3oJ-dL-sMn"/>
+                <outlet property="lblTotalTimeToDo" destination="pfW-Qj-Jgo" id="a6d-ia-LAv"/>
+                <outlet property="levelLeft" destination="Gc9-E5-g2S" id="vSL-4m-HiS"/>
+                <outlet property="levelRight" destination="yUV-Li-swL" id="iLh-xu-8Ki"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="976" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <levelIndicator verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUV-Li-swL">
+                    <rect key="frame" x="24" y="46" width="952" height="18"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <levelIndicatorCell key="cell" alignment="left" maxValue="100" warningValue="100" criticalValue="100" levelIndicatorStyle="continuousCapacity" id="UX4-su-Pye"/>
+                </levelIndicator>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rr6-XI-5Yn">
+                    <rect key="frame" x="127" y="4" width="34.5" height="36.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSTouchBarPlayTemplate" imagePosition="only" alignment="center" alternateImage="NSTouchBarPauseTemplate" imageScaling="proportionallyUpOrDown" inset="2" id="rsp-ay-akj">
+                        <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+IA
+</string>
+                    </buttonCell>
+                    <connections>
+                        <action selector="btnPlayAction:" target="-2" id="Pob-nE-jba"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yVh-NT-70R">
+                    <rect key="frame" x="11" y="2.5" width="32" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSTouchBarRewindTemplate" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="LM4-4o-fW4">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="btnBackwardAction:" target="-2" id="IU5-P3-DRK"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f1a-Bb-B2A">
+                    <rect key="frame" x="185" y="2.5" width="32" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSTouchBarFastForwardTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Mdv-95-2zx">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="btnForwardAction:" target="-2" id="4Fw-ar-fnK"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K4M-cC-GV3">
+                    <rect key="frame" x="69" y="2.5" width="34.5" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSTouchBarRecordStopTemplate" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0ke-Zk-kbw">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="btnStopAction:" target="-2" id="0NJ-2N-kEe"/>
+                    </connections>
+                </button>
+                <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="oRC-mH-y7s">
+                    <rect key="frame" x="340" y="19" width="565" height="20"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                </progressIndicator>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="4jA-uB-fPW">
+                    <rect key="frame" x="254" y="21" width="54" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="1:00:32" id="wG2-uw-QpJ">
+                        <font key="font" metaFont="fixedUser" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="6vv-Q0-yHi">
+                    <rect key="frame" x="340" y="1" width="565" height="20"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                </progressIndicator>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-7t-qTe">
+                    <rect key="frame" x="254" y="1" width="54" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="0:32" id="0m2-3b-fhY">
+                        <font key="font" metaFont="fixedUser" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="pfW-Qj-Jgo">
+                    <rect key="frame" x="911" y="1" width="67" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="5:33" id="gVl-ZO-THN">
+                        <font key="font" metaFont="fixedUser" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mq-Zf-gJW">
+                    <rect key="frame" x="-2" y="71" width="12" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="L" id="6LZ-xJ-gby">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h8l-AY-N9E">
+                    <rect key="frame" x="-2" y="48" width="13" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="R" id="Ajn-Cd-EhX">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="D6w-Az-wMJ">
+                    <rect key="frame" x="911" y="21" width="67" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="5:33" id="B4a-11-4Z0">
+                        <font key="font" metaFont="fixedUser" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <levelIndicator verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gc9-E5-g2S">
+                    <rect key="frame" x="24" y="69" width="952" height="18"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <levelIndicatorCell key="cell" alignment="left" maxValue="100" warningValue="100" criticalValue="100" levelIndicatorStyle="continuousCapacity" id="kqx-dh-2cW"/>
+                </levelIndicator>
+            </subviews>
+            <point key="canvasLocation" x="262" y="-0.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSTouchBarFastForwardTemplate" width="19" height="12"/>
+        <image name="NSTouchBarPauseTemplate" width="11" height="13"/>
+        <image name="NSTouchBarPlayTemplate" width="12" height="13"/>
+        <image name="NSTouchBarRecordStopTemplate" width="14" height="13"/>
+        <image name="NSTouchBarRewindTemplate" width="19" height="12"/>
+    </resources>
+</document>
